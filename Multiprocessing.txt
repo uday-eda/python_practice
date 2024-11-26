@@ -1,0 +1,21 @@
+Multiprocessing
+
+Multiprocessing in Python is a module used for parallel processing, allowing us to execute multiple tasks simultaneously. This is especially useful for CPU-bound tasks. By leveraging multiple CPU cores, we can significantly improve the performance of our applications.
+
+Key Concepts:
+	Process: Represents an independent process that executes a target function
+	start: Starts the execution of the process.
+	join: Blocks the main process until the child process completes.
+	Pool: A pool of worker processes to execute tasks in parallel.
+	Queue: A thread- and process-safe data structure for communication between processes.(communication between the main process and child processes)
+Advantages:
+	Fully utilizes multiple CPU cores.
+	Separate memory space for each process, avoiding conflicts.
+	Scales well for CPU-bound tasks.
+Disadvantages:
+	Processes consume more resources than threads.
+	Communication between processes is more complex than between threads.
+	Slower startup time compared to threads.
+
+
+
