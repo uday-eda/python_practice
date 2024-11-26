@@ -1,2 +1,1 @@
-# python_practice
-python practice
+This code demonstrates how to extract detailed information from multiple websites concurrently using Python’s multiprocessing module. The extracted data is saved in a CSV file for structured and reusable output.
