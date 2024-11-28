@@ -143,8 +143,8 @@ def fetch_site_info(url, queue):
             "num_links": len(links),
             "links": links
         }
-        queue.put(site_info)
-        logging.info(f"Successfully fetched data for {url}")
+        queue.put(site_info,block=True, timeout=10)
+        logging.info(f"Successfully fetched data for {url}")  # Wait for 10 seconds if queue is full
     except requests.RequestException as e:
         queue.put({"url": url, "error": str(e)})
         logging.error(f"Request error for {url}: {e}")
