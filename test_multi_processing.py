@@ -175,11 +175,11 @@ class TestWebScraper(unittest.TestCase):
 
             lines = file.readlines()
 
-            self.assertGreater(len(lines), 1)  # Ensure header and at least one row
+            self.assertGreater(len(lines), 1)
 
 
 
-        os.remove(output_file)  # Cleanup
+        os.remove(output_file)
 
 
 
@@ -196,7 +196,7 @@ class TestWebScraper(unittest.TestCase):
 
         for log_file in log_files:
 
-            os.remove(log_file)  # Remove generated log files after testing
+            os.remove(log_file)
 
 
 
